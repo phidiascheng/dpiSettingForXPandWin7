@@ -1,4 +1,6 @@
 @echo off
+set /p s=即将重启请按回车键：
+
 Reg query HKEY_CURRENT_CONFIG\Software\Fonts /v LogPixels
 for /f "tokens=3" %%a in ('Reg query HKEY_CURRENT_CONFIG\Software\Fonts /v LogPixels') do set "var=%%a%"
 
